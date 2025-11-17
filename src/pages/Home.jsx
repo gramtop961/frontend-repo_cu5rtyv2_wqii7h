@@ -1,13 +1,10 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import About from './components/About'
-import Footer from './components/Footer'
+import Hero from '../components/Hero'
+import Services from '../components/Services'
+import About from '../components/About'
 
-function App() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <Navbar />
+    <>
       <Hero />
       <Services />
       <About />
@@ -20,9 +17,6 @@ function App() {
           <a href="/contact" className="inline-flex items-center rounded-full bg-cyan-300 px-6 py-3 font-semibold text-slate-900 hover:scale-[1.03] transition-transform">Start a project</a>
         </div>
       </section>
-      <Footer />
-    </div>
+    </>
   )
 }
-
-export default App
